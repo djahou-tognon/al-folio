@@ -111,3 +111,31 @@ keywords={},
 year={2025},
 website={https://www.dd29.polimi.it/}
 }
+
+@misc{HYP26,
+  abbr     = {HYP26},
+  abstract = {The dynamics of water flow through an irrigation channel network can be described by the so-
+lutions of the two-dimensional shallow-water equations (Saint-Venant equations) within a 2D
+geometric framework representing both the the incoming/outgoing channels and their junction
+regions. Computation becomes more efficient if the dynamics are assumed to be homogeneous
+across the channel cross-sections, allowing the network geometry to be represented as a set of
+one-dimensional intervals coupled at junction points. Along each 1D interval, the water dynam-
+ics are governed by the one-dimensional shallow-water equations. However, a major challenge
+of this approach lies in defining appropriate boundary conditions at the junction points to cou-
+ple the water height and velocity across the different intervals. Continuity of water energy is
+often imposed at the junctions, but such models frequently neglect the specific geometry of the
+junctions, including channel cross-sections and the angles between them.
+We propose a machine learning–based approach to predict the boundary 1D water heights and
+velocities near channel junctions. The learning framework relies on 2D shallow-water solutions
+computed for various channel cross-sections, junction angles, and initial conditions. From these
+solutions, data are extracted near the junction points to construct suitable junction represen-
+tations. A neural network is then trained to learn the water dynamics at the junction. The
+overall irrigation channel dynamics are subsequently described by coupling the neural network
+predictions at the junctions with a 1D shallow-water solver applied to the incoming and},
+  author   = {Djahou Tognon},
+  keywords = {},
+  note     = {The 20th International Conference on Hyperbolic Problems: Theory, Numerics and Applications},
+  title    = {Machine learning–enhanced junction modeling for shallow-water channel},
+  website      = {https://www.conftool.com/hyp2026/index.php?page=browseSessions&form_date=all&form_session=100&presentations=show},
+  year     = {2026}
+}
